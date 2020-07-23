@@ -35,6 +35,11 @@ obj.e="added";  // Adding key-value pair directly to obj
 delete obj.c;   // deleting random object
 console.log(obj);
 
+// const obj can also be modified
+const obj2 = {a: 2, b:15};
+obj2.a = 3;
+console.log(obj2);  // { a: 3, b: 15 }
+
 
 // functions
 function inc (cuteness) {
