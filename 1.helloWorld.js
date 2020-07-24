@@ -14,9 +14,14 @@ console.log(typeof result, typeof t);     // string number -> data has type
 // Loops
 for (let i=0; i<4; i++) {
     console.log(i*i);   // In separate lines
-    result+=i+" ";
+    result+=i*i+" ";
 }
 console.log(result);    // On single line
+
+let ar=[10,20,30,40,50];
+for (let val of ar) console.log(val);   // for-of loop like for-each in c++
+for (let ind in ar) console.log(ind);   // for-in loop -> gives index
+
 
 // Max value of number
 console.log(Number.MAX_SAFE_INTEGER);   //9007199254740991

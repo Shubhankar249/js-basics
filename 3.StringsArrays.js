@@ -5,7 +5,7 @@ let str="dsklcdskncl";
 str[1]="f"; //doesn't produce err but has no affect -> nothing changes
 console.log(str[1]);    //s
 
-console.log(str.indexOf('s'));    //1
+console.log(str.indexOf('s'));    //1   (-1 if string is not present)
 console.log(str.indexOf('s', 2));    //6
 
 console.log(str.lastIndexOf('s'));  //6
@@ -45,7 +45,7 @@ console.log(ar);    // hello is deleted
 ar[7]="hii";    // leaves empty blocks
 console.log(ar,"->", ar.length);
 
-ar.pop();
+ar.pop();   // const arrays also have same affects
 ar.pop();   // empty space can be popped also
 ar.push(220, "kill");   // insert given elements at last
 console.log(ar);
@@ -60,3 +60,4 @@ console.log(ar);
 let v= ar.concat([5,3,"world"]);
 console.log(ar);    //Doesn't mutate
 console.log(v);
+
