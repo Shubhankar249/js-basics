@@ -17,7 +17,7 @@ download(function (data) {
 
 
 //Using promises
-function downloadPromise() {
+function downloadPromise() {    // No callback fun need to be passed
     console.log("downloadPromise called");
     // This fun will return a promise object that can be used later
     return new Promise(function (resolve, reject) { // resolve is called after .then() and reject with .catch()
@@ -40,6 +40,7 @@ downloadPromise()
     .catch(function (err) { //reject
         console.error(err);
     });
+
 // this works same as callback fun
 // but promises also let us execute resolve fun after some time
 // If u want to obtain some data and want to deal with error immediately but want to show data later ->
