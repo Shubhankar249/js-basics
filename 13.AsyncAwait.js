@@ -12,7 +12,7 @@ function sayHello(times, name) {
     })
 }
 
-(async () =>  {     //Await can only be called in async func.
+(async () =>  {     //Await can only be called in async fun.
     sayHello(5, "Jack"); //Runs concurrently
     await sayHello(2, "Jones");
     await sayHello(2, "Jill")   //Runs sequentially
